@@ -42,6 +42,9 @@
         npm install
     </li>
     <li>
+        npm run typeorm -- -d ./src/database/configs/cfg_datasource.ts migration:run
+    </li>
+    <li>
         npm run dev
     </li>
 </ul>
