@@ -26,13 +26,13 @@
 
 <ul>
     <li>
+        Express
+    </li>
+    <li>
         Typescript
     </li>
     <li>
         TypeOrm
-    </li>
-    <li>
-        NodeJs
     </li>
 </ul>
 
