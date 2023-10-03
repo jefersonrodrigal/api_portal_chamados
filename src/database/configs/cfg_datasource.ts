@@ -12,7 +12,7 @@ import { createRelationshipAtendentes1Nchamados1688563727576 } from '../migratio
 export const ApiDataSource = new DataSource({
   type: 'sqlite',
   database: './homologdb.sqlite',
-  synchronize: false,
+  synchronize: true,
   entities: [User, Attendant, Reports],
   migrations: [
     createDatabase1688071208975,
