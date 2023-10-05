@@ -1,6 +1,6 @@
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
-import { ILoginDTO } from 'src/controllers/login.controller'
+import { ILoginDTO } from 'src/DTOs/LoginDTO'
 import { loginUserRepositori } from 'src/repositories/login.repositorie'
 
 const SECRET_KEY = 'mysecret'

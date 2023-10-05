@@ -1,8 +1,5 @@
 import bcrypt from 'bcrypt'
-import {
-  IAttendantUpdateDTO,
-  IAttendentsDTO,
-} from 'src/controllers/attendants.controller'
+import { IAttendantUpdateDTO, IAttendentsDTO } from 'src/DTOs/AttendentsDTO'
 import { logger } from 'src/logs/logs.cfg/log-cfg'
 import {
   createAttendantRepositori,

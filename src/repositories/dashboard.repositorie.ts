@@ -1,4 +1,4 @@
-import { IDataDTO } from 'src/controllers/dashboard.controller'
+import { IDataDTO } from 'src/DTOs/DashboardDTO'
 import { ApiDataSource } from '../database/configs/cfg_datasource'
 import { Reports } from '../database/entyties/Reports'
 import { logger } from 'src/logs/logs.cfg/log-cfg'

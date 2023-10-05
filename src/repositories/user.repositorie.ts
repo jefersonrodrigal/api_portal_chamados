@@ -4,8 +4,8 @@ Recebe os dados e faz as operações de banco
 
 import { User } from 'src/database/entyties/User'
 import { ApiDataSource } from '../database/configs/cfg_datasource'
-import { IUserDTO, IUserUpdateDTO } from 'src/controllers/user.controller'
 import { logger } from 'src/logs/logs.cfg/log-cfg'
+import { IUserDTO, IUserUpdateDTO } from 'src/DTOs/UserDTO'
 
 interface IUserQuery {
   name: string

@@ -1,4 +1,5 @@
-import { IDataDTO } from 'src/controllers/dashboard.controller'
+
+import { IDataDTO } from 'src/DTOs/DashboardDTO'
 import {
   createReportRepositorie,
   listReportsUserRepositorie,

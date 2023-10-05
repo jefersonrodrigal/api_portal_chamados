@@ -1,11 +1,9 @@
 import { Request, Response } from 'express'
 import { loginService } from 'src/services/login.services'
 import { logger } from 'src/logs/logs.cfg/log-cfg'
+import { ILoginDTO } from 'src/DTOs/LoginDTO'
 
-export interface ILoginDTO {
-  email: string
-  password: string
-}
+
 
 export async function loginController(req: Request, res: Response) {
   try {

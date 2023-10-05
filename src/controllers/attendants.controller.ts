@@ -6,19 +6,9 @@ import {
   updateAttendantService,
 } from '../services/attendants.services'
 import { logger } from 'src/logs/logs.cfg/log-cfg'
+import { IAttendantUpdateDTO, IAttendentsDTO } from 'src/DTOs/AttendentsDTO'
 
-export interface IAttendentsDTO {
-  email: string
-  password: string
-  name: string
-  lastname: string
-}
 
-export interface IAttendantUpdateDTO {
-  nome: string
-  sobrenome: string
-  email: string
-}
 
 export async function createAttendantsController(req: Request, res: Response) {
   const data: IAttendentsDTO = req.body

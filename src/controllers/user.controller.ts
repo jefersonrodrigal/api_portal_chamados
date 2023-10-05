@@ -10,19 +10,8 @@ import {
   updateUserService,
 } from '../services/user.services'
 import { logger } from 'src/logs/logs.cfg/log-cfg'
+import { IUserDTO, IUserUpdateDTO } from 'src/DTOs/UserDTO'
 
-export interface IUserDTO {
-  email: string
-  password: string
-  name: string
-  lastname: string
-}
-
-export interface IUserUpdateDTO {
-  nome: string
-  sobrenome: string
-  email: string
-}
 
 export async function createUserController(req: Request, res: Response) {
   try {

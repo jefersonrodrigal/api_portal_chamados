@@ -4,11 +4,8 @@ import {
   createReportService,
   listReportsServices,
 } from '../services/dashboard.services'
+import { IDataDTO } from 'src/DTOs/DashboardDTO'
 
-export interface IDataDTO {
-  assunto: string
-  chamado: string
-}
 
 export async function createReportController(req: Request, res: Response) {
   try {

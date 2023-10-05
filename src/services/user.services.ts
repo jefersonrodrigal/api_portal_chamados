@@ -4,7 +4,6 @@ regras de negocio e encaminha os dados para a camada Repositorie
 
 */
 
-import { IUserDTO, IUserUpdateDTO } from 'src/controllers/user.controller'
 import bcrypt from 'bcrypt'
 import {
   createUserRepository,
@@ -16,6 +15,7 @@ import {
   updateUserRepositorie,
 } from 'src/repositories/user.repositorie'
 import { logger } from 'src/logs/logs.cfg/log-cfg'
+import { IUserDTO, IUserUpdateDTO } from 'src/DTOs/UserDTO'
 
 export async function createUserService(data: IUserDTO) {
   try {

@@ -1,7 +1,5 @@
-import {
-  IAttendantUpdateDTO,
-  IAttendentsDTO,
-} from 'src/controllers/attendants.controller'
+
+import { IAttendantUpdateDTO, IAttendentsDTO } from 'src/DTOs/AttendentsDTO'
 import { ApiDataSource } from 'src/database/configs/cfg_datasource'
 import { Attendant } from 'src/database/entyties/Attendants'
 import { logger } from 'src/logs/logs.cfg/log-cfg'
