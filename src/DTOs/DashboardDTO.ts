@@ -1,4 +1,4 @@
-export interface IDataDTO {
+export type IDataDTO = {
   assunto: string
   chamado: string
 }

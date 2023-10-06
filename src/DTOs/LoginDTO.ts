@@ -1,4 +1,4 @@
-export interface ILoginDTO {
+export type ILoginDTO = {
   email: string
   password: string
 }
