@@ -1,8 +1,9 @@
+import 'dotenv/config'
 import { NextFunction, Request, Response } from 'express'
 import { logger } from 'src/logs/logs.cfg/log-cfg'
 import jwt from 'jsonwebtoken'
 
-const SECRET_KEY = 'mysecret'
+const SECRET_KEY = process.env.SECRET_KEY
 
 export function verifyToken(req: Request, res: Response, next: NextFunction) {
   let authHeader = req.headers.authorization
