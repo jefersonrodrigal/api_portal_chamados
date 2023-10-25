@@ -10,3 +10,9 @@ export type IUserUpdateDTO = {
   sobrenome: string
   email: string
 }
+
+export type IUserQuery = {
+  name: string
+  lastname: string
+  email: string
+}

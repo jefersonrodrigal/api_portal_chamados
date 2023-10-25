@@ -5,13 +5,7 @@ Recebe os dados e faz as operações de banco
 import { User } from 'src/database/entyties/User'
 import { ApiDataSource } from '../database/configs/cfg_datasource'
 import { logger } from 'src/logs/logs.cfg/log-cfg'
-import { IUserDTO, IUserUpdateDTO } from 'src/DTOs/UserDTO'
-
-interface IUserQuery {
-  name: string
-  lastname: string
-  email: string
-}
+import { IUserDTO, IUserQuery, IUserUpdateDTO } from 'src/DTOs/UserDTO'
 
 export async function createUserRepository(userData: IUserDTO) {
   try {
